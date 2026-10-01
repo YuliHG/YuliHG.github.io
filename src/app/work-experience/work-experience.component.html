@@ -1,0 +1,20 @@
+<div class="experience-container">
+  <article class="experience-item" *ngFor="let job of workExperience">
+    <div class="item-header">
+      <div class="job-meta">
+        <h3 class="job-position">{{ job.position }}</h3>
+        <h4 class="company-name">{{ job.company }}</h4>
+        <span class="job-dates">{{ job.startDate }} – {{ job.endDate }}</span>
+      </div>
+      <div class="job-location" *ngIf="job.location">
+        {{ job.location }}
+      </div>
+    </div>
+
+    <div class="accomplishments-container" *ngIf="job.accomplishments">
+      <ul class="accomplishments-list">
+        <li>{{ job.accomplishments }}</li>
+      </ul>
+    </div>
+  </article>
+</div>

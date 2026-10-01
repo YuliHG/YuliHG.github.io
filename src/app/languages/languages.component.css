@@ -1,0 +1,33 @@
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.language-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f8f8fa;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border-left: 2px solid #b8252a;
+}
+
+.lang-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-name {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.lang-badge {
+  font-size: 0.76rem;
+  color: #555555;
+  padding-left: 4px;
+}

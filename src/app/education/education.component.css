@@ -1,0 +1,50 @@
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.education-card {
+  border-left: 2px solid #b8252a;
+  padding-left: 14px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.degree-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+}
+
+.institution-name {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+.dates {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #b8252a;
+  margin-top: 2px;
+}
+
+.edu-location {
+  font-size: 0.8rem;
+  color: #666666;
+  text-align: right;
+  white-space: nowrap;
+}

@@ -1,0 +1,61 @@
+.cv-page {
+  width: 100%;
+  max-width: 960px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  /* Se retira min-height: 100vh para que no deje espacios artificiales en blanco */
+  height: auto;
+}
+
+.cv-header {
+  background-color: #f4f5f7;
+  border-bottom: 4px solid #b8252a;
+  padding: 32px 45px;
+}
+
+.cv-body {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  column-gap: 40px;
+  row-gap: 25px;
+  padding: 35px 45px 40px 45px;
+  align-items: start; /* Evita que las columnas se estiren forzadamente */
+}
+
+.cv-column-left,
+.cv-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px; /* Espaciado compacto y armónico entre bloques */
+}
+
+.cv-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  bottom: 1px;
+  width: 3.5px;
+  background-color: #b8252a;
+}
+
+.section-content {
+  padding-left: 14px;
+}

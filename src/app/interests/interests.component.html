@@ -1,0 +1,6 @@
+<div class="interests-grid">
+  <div class="interest-pill" *ngFor="let item of interestsList">
+    <span class="interest-name">{{ item.name }}</span>
+    <span class="interest-desc" *ngIf="item.description">{{ item.description }}</span>
+  </div>
+</div>

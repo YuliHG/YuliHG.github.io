@@ -1,0 +1,20 @@
+<div class="header-container">
+  <!-- Columna 1: Nombre y Meta a la izquierda -->
+  <div class="header-left">
+    <h1 class="profile-name">{{ header.name }}</h1>
+    <p class="profile-goal">{{ header.goalLife }}</p>
+  </div>
+
+  <!-- Columna 2: Foto al centro -->
+  <div class="header-center">
+    <img [src]="header.photoUrl || '/foto.jpg'" alt="Foto de perfil">
+  </div>
+
+  <!-- Columna 3: Contacto a la derecha -->
+  <div class="header-right">
+    <p class="contact-line" *ngIf="header.email">{{ header.email }}</p>
+    <p class="contact-line" *ngIf="header.phoneNumber">{{ header.phoneNumber }}</p>
+    <p class="contact-line" *ngIf="header.location">{{ header.location }}</p>
+    <p class="contact-line social-tag" *ngIf="header.socialNetwork">{{ header.socialNetwork }}</p>
+  </div>
+</div>

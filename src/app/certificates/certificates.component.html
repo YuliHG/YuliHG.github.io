@@ -1,0 +1,14 @@
+<div class="certificates-list">
+  <article class="certificate-item" *ngFor="let item of certificatesList">
+    <div class="cert-body">
+      <h4 class="cert-title">
+        <a *ngIf="item.certificateURL; else noUrl" [href]="item.certificateURL" target="_blank" class="cert-link">
+          {{ item.title }}
+        </a>
+        <ng-template #noUrl>{{ item.title }}</ng-template>
+      </h4>
+      <p class="cert-issuer" *ngIf="item.issuser">{{ item.issuser }}</p>
+    </div>
+    <span class="cert-date" *ngIf="item.date">{{ item.date }}</span>
+  </article>
+</div>

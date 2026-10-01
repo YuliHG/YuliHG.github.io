@@ -1,0 +1,9 @@
+<div class="languages-list">
+  <div class="language-card" *ngFor="let item of languagesList">
+    <div class="lang-info">
+      <span class="lang-dot"></span>
+      <span class="lang-name">{{ item.language }}</span>
+    </div>
+    <span class="lang-badge">{{ item.level }}</span>
+  </div>
+</div>

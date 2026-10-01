@@ -1,0 +1,83 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.experience-item {
+  border-left: 2.5px solid #b8252a;
+  padding-left: 18px;
+  position: relative;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.job-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.job-position {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.company-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #404040;
+  margin: 0;
+}
+
+.job-dates {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #b8252a;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.job-location {
+  font-size: 0.82rem;
+  color: #666666;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.accomplishments-container {
+  margin-top: 6px;
+}
+
+.accomplishments-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.accomplishments-list li {
+  font-size: 0.82rem;
+  color: #444444;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 14px;
+}
+
+.accomplishments-list li::before {
+  content: '•';
+  color: #b8252a;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+}

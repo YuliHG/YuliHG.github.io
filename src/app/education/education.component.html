@@ -1,0 +1,14 @@
+<div class="education-list">
+  <article class="education-card" *ngFor="let item of educationList">
+    <div class="card-header">
+      <div class="titles">
+        <h3 class="degree-title">{{ item.degree }}</h3>
+        <h4 class="institution-name">{{ item.institution }}</h4>
+        <span class="dates">{{ item.startDate }} – {{ item.endDate }}</span>
+      </div>
+      <div class="edu-location" *ngIf="item.location">
+        {{ item.location }}
+      </div>
+    </div>
+  </article>
+</div>

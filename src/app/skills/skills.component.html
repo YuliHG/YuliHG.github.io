@@ -1,0 +1,7 @@
+<div class="skills-container">
+  <div class="skill-card" *ngFor="let item of skillsList">
+    <span class="skill-category">{{ item.category || 'Technical' }}</span>
+    <p class="skill-name">{{ item.name }}</p>
+    <span class="skill-level">{{ item.level }}</span>
+  </div>
+</div>
